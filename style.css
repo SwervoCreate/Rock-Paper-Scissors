@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+body { 
+    margin: 0;
+    background-color: #28B4E5;
+    font-family: 'Mochiy Pop One', sans-serif;
+    overflow: hidden
+
+}
+
+.container {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em
+}
+
+.container div {
+    height: 30em;
+    width: 50em;
+}
+
+.container img {
+    height: 15em;
+    width: auto;
+    padding: 1em;
+}
+
+.container img:hover, #muteButton:hover {
+    cursor: pointer;
+}
+
+.count-container {
+    height: 15em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    width: 100vw;
+}
+
+.count-container h2 {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.winner-container {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: url(/resources/headerbackground.png);
+}
+
+.paper, .scissors, .rock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regular {
+    background-color: none;
+    border: none;
+}
+
+footer {
+    height: 3.8em;
+    background-color: #28B4E5;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.social-container img {
+    height: 3em;
+    width: auto;
+
+}
+
+
+@keyframes scissorsAttack {
+    from {
+        transform: translateX(0vw); 
+      } to {
+        transform: translateX(-20vw);
+    }
+}
+
+@keyframes scissorsAttackPaper {
+    from {transform: translateX(0vw);
+    } to {
+        transform: translateX(-40vw);
+    }
+}
+
+@keyframes scissorDie {
+    from {
+        transform: translateY(0vh);
+        transform: translateX(-20vw);
+    } to {
+        transform: translateY(200vh);
+        transform: translateX((-20vw));
+    }
+}
+
+@keyframes rockAttack {
+    from {
+        transform: translateX(0vw);
+    } to {
+        transform: translateX(20vw);
+    }
+}
+
+@keyframes paperCoverRock {
+    from {
+        transform: translateX(0vw);
+        
+    } to {
+        transform: translateX(-30vw);
+        
+    }
+}
+
+.clip {
+    object-position: top;
+    
+}
+
